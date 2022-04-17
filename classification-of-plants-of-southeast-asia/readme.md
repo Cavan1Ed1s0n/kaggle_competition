@@ -22,7 +22,7 @@ Metric để đánh giá: F1 score, recall, precision, accuracy
 1. Train với unbalanced dataset, split 80-20 (train, val). Train 5-10 lần để thống kê.
    | Model | F1 score | recall | precision | accuracy |
    |:-----|:--------:|:------:|:---------:|:--------:|
-   | Resnet | x | x | x | x |
+   | Resnet | x | x | x | 0.5238, |
    | Alexnet | x | x| x| x |
    | VGG16 | x| x| x | x |
 
@@ -34,6 +34,7 @@ Metric để đánh giá: F1 score, recall, precision, accuracy
    | Resnet | x | x | x | x |
    | Alexnet | x | x| x| x |
    | VGG16 | x| x| x | x |
+
    -> kết luận: kết quả tốt hơn. -> Chọn dc model tốt nhất
 
 3. Train với các split khác nhau: 50-50, 80-20, 95-5,...
