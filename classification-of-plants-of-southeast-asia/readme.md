@@ -19,7 +19,7 @@ Tất cả đều train với 5 epoch, batchsize 64
 
 Metric để đánh giá: F1 score, recall, precision, accuracy
 
-1. Train với unbalanced dataset, split 80-20 (train, val). Train 5-10 lần để thống kê.
+1. Train với unbalanced dataset (data dữ nguyên không làm gì), split 80-20 (train, val). Train 5-10 lần để thống kê.
    | Model | F1 score | recall | precision | accuracy |
    |:-----|:--------:|:------:|:---------:|:--------:|
    | Resnet | x | x | x | 0.5238, |
@@ -28,7 +28,7 @@ Metric để đánh giá: F1 score, recall, precision, accuracy
 
    -> kết luận: overfit với unbalanced dataset
 
-2. Oversampling data, split 80-20 (train, val). Train 5-10 lần để thống kê.
+2. Oversampling data (augmentation data), split 80-20 (train, val). Train 5-10 lần để thống kê.
    | Model | F1 score | recall | precision | accuracy |
    |:-----|:--------:|:------:|:---------:|:--------:|
    | Resnet | x | x | x | x |
@@ -37,7 +37,7 @@ Metric để đánh giá: F1 score, recall, precision, accuracy
 
    -> kết luận: kết quả tốt hơn. -> Chọn dc model tốt nhất
 
-3. Train với các split khác nhau: 50-50, 80-20, 95-5,...
+3. Train với các split khác nhau: 50-50, 80-20, 95-5,... Train 5-10 lần để thống kê.
    | Model | F1 score | recall | precision | accuracy |
    |:-----|:--------:|:------:|:---------:|:--------:|
    | Resnet 50-50 | x | x | x | x |
